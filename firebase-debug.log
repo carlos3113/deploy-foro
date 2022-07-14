@@ -1,0 +1,219 @@
+[debug] [2022-07-14T19:31:55.807Z] ----------------------------------------------------------------------
+[debug] [2022-07-14T19:31:55.810Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USUARIO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-07-14T19:31:55.810Z] CLI Version:   11.2.2
+[debug] [2022-07-14T19:31:55.810Z] Platform:      win32
+[debug] [2022-07-14T19:31:55.810Z] Node Version:  v16.15.0
+[debug] [2022-07-14T19:31:55.811Z] Time:          Thu Jul 14 2022 15:31:55 GMT-0400 (hora de Bolivia)
+[debug] [2022-07-14T19:31:55.811Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-14T19:31:55.815Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-07-14T19:31:55.886Z] Field ".hosting" in "firebase.json" is possibly invalid: should be object
+[debug] [2022-07-14T19:31:55.887Z] Object ".hosting[0]" in "firebase.json" is missing required property: {"missingProperty":"target"}
+[debug] [2022-07-14T19:31:55.887Z] Object ".hosting[0]" in "firebase.json" is missing required property: {"missingProperty":"site"}
+[debug] [2022-07-14T19:31:55.887Z] Field ".hosting[0]" in "firebase.json" is possibly invalid: should match some schema in anyOf
+[debug] [2022-07-14T19:31:55.887Z] Field ".hosting" in "firebase.json" is possibly invalid: should match some schema in anyOf
+[debug] [2022-07-14T19:31:55.892Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-14T19:31:55.893Z] > authorizing via signed-in user (carlos.zurita1331@gmail.com)
+[debug] [2022-07-14T19:31:55.894Z] Field ".hosting" in "firebase.json" is possibly invalid: should be object
+[debug] [2022-07-14T19:31:55.894Z] Object ".hosting[0]" in "firebase.json" is missing required property: {"missingProperty":"target"}
+[debug] [2022-07-14T19:31:55.894Z] Object ".hosting[0]" in "firebase.json" is missing required property: {"missingProperty":"site"}
+[debug] [2022-07-14T19:31:55.894Z] Field ".hosting[0]" in "firebase.json" is possibly invalid: should match some schema in anyOf
+[debug] [2022-07-14T19:31:55.894Z] Field ".hosting" in "firebase.json" is possibly invalid: should match some schema in anyOf
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\foroFsuperF\forof
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2022-07-14T19:31:56.404Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-07-14T19:31:56.405Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-07-14T19:33:05.661Z] Using project from CLI flag: ctae-forum
+[debug] [2022-07-14T19:33:05.662Z] > refreshing access token with scopes: []
+[debug] [2022-07-14T19:33:05.663Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-07-14T19:33:05.663Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-14T19:33:06.023Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-07-14T19:33:06.023Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-14T19:33:06.070Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ctae-forum [none]
+[debug] [2022-07-14T19:33:07.199Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ctae-forum 403
+[debug] [2022-07-14T19:33:07.200Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ctae-forum {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-07-14T19:33:07.202Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-07-14T19:33:07.397Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\USUARIO\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\USUARIO\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:287:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project ctae-forum. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-07-14T19:33:23.520Z] ----------------------------------------------------------------------
+[debug] [2022-07-14T19:33:23.522Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USUARIO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-07-14T19:33:23.522Z] CLI Version:   11.2.2
+[debug] [2022-07-14T19:33:23.522Z] Platform:      win32
+[debug] [2022-07-14T19:33:23.522Z] Node Version:  v16.15.0
+[debug] [2022-07-14T19:33:23.523Z] Time:          Thu Jul 14 2022 15:33:23 GMT-0400 (hora de Bolivia)
+[debug] [2022-07-14T19:33:23.524Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-14T19:33:23.582Z] Field ".hosting" in "firebase.json" is possibly invalid: should be object
+[debug] [2022-07-14T19:33:23.583Z] Object ".hosting[0]" in "firebase.json" is missing required property: {"missingProperty":"target"}
+[debug] [2022-07-14T19:33:23.583Z] Object ".hosting[0]" in "firebase.json" is missing required property: {"missingProperty":"site"}
+[debug] [2022-07-14T19:33:23.583Z] Field ".hosting[0]" in "firebase.json" is possibly invalid: should match some schema in anyOf
+[debug] [2022-07-14T19:33:23.584Z] Field ".hosting" in "firebase.json" is possibly invalid: should match some schema in anyOf
+[debug] [2022-07-14T19:33:23.588Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-14T19:33:23.588Z] > authorizing via signed-in user (carlos.zurita1331@gmail.com)
+[debug] [2022-07-14T19:33:23.589Z] Field ".hosting" in "firebase.json" is possibly invalid: should be object
+[debug] [2022-07-14T19:33:23.589Z] Object ".hosting[0]" in "firebase.json" is missing required property: {"missingProperty":"target"}
+[debug] [2022-07-14T19:33:23.589Z] Object ".hosting[0]" in "firebase.json" is missing required property: {"missingProperty":"site"}
+[debug] [2022-07-14T19:33:23.589Z] Field ".hosting[0]" in "firebase.json" is possibly invalid: should match some schema in anyOf
+[debug] [2022-07-14T19:33:23.589Z] Field ".hosting" in "firebase.json" is possibly invalid: should match some schema in anyOf
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\foroFsuperF\forof
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-07-14T19:33:28.469Z] Using project from CLI flag: ctae-forum
+[debug] [2022-07-14T19:33:28.471Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ctae-forum [none]
+[debug] [2022-07-14T19:33:28.911Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ctae-forum 403
+[debug] [2022-07-14T19:33:28.912Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ctae-forum {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-07-14T19:33:28.914Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-07-14T19:33:29.104Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\USUARIO\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\USUARIO\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:287:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project ctae-forum. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-07-14T19:46:15.535Z] ----------------------------------------------------------------------
+[debug] [2022-07-14T19:46:15.537Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USUARIO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-07-14T19:46:15.537Z] CLI Version:   11.2.2
+[debug] [2022-07-14T19:46:15.537Z] Platform:      win32
+[debug] [2022-07-14T19:46:15.538Z] Node Version:  v16.15.0
+[debug] [2022-07-14T19:46:15.538Z] Time:          Thu Jul 14 2022 15:46:15 GMT-0400 (hora de Bolivia)
+[debug] [2022-07-14T19:46:15.539Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-14T19:46:15.606Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-14T19:46:15.606Z] > authorizing via signed-in user (carlos.zurita1331@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\foroFsuperF\forof
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-07-14T19:46:27.203Z] Using project from CLI flag: ctae-forum
+[debug] [2022-07-14T19:46:27.204Z] > refreshing access token with scopes: []
+[debug] [2022-07-14T19:46:27.206Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-07-14T19:46:27.206Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-14T19:46:27.450Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-07-14T19:46:27.451Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-14T19:46:27.565Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ctae-forum [none]
+[debug] [2022-07-14T19:46:28.715Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ctae-forum 403
+[debug] [2022-07-14T19:46:28.715Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ctae-forum {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-07-14T19:46:28.717Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-07-14T19:46:28.909Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\USUARIO\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\USUARIO\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:287:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project ctae-forum. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-07-14T19:47:46.209Z] ----------------------------------------------------------------------
+[debug] [2022-07-14T19:47:46.211Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USUARIO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-07-14T19:47:46.211Z] CLI Version:   11.2.2
+[debug] [2022-07-14T19:47:46.212Z] Platform:      win32
+[debug] [2022-07-14T19:47:46.212Z] Node Version:  v16.15.0
+[debug] [2022-07-14T19:47:46.213Z] Time:          Thu Jul 14 2022 15:47:46 GMT-0400 (hora de Bolivia)
+[debug] [2022-07-14T19:47:46.213Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-14T19:47:46.277Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-14T19:47:46.277Z] > authorizing via signed-in user (carlos.zurita1331@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\foroFsuperF\forof
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-07-14T19:47:51.310Z] Using project from CLI flag: foromiller-1da76
+[debug] [2022-07-14T19:47:51.312Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/foromiller-1da76 [none]
+[debug] [2022-07-14T19:47:51.764Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/foromiller-1da76 200
+[debug] [2022-07-14T19:47:51.764Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/foromiller-1da76 {"projectId":"foromiller-1da76","projectNumber":"1064097293492","displayName":"foroMiller","name":"projects/foromiller-1da76","resources":{"hostingSite":"foromiller-1da76","storageBucket":"foromiller-1da76.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] i  Using project foromiller-1da76 (foroMiller) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Detected a .git folder at D:\foroFsuperF\forof 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=733814298&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-07-14T19:50:09.322Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2022-07-14T19:50:09.323Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2022-07-14T19:50:10.629Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2022-07-14T19:50:10.629Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2022-07-14T19:50:10.646Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-07-14T19:50:11.620Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-07-14T19:50:11.620Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"carlos3113","id":104217799,"node_id":"U_kgDOBjY8xw","avatar_url":"https://avatars.githubusercontent.com/u/104217799?v=4","gravatar_id":"","url":"https://api.github.com/users/carlos3113","html_url":"https://github.com/carlos3113","followers_url":"https://api.github.com/users/carlos3113/followers","following_url":"https://api.github.com/users/carlos3113/following{/other_user}","gists_url":"https://api.github.com/users/carlos3113/gists{/gist_id}","starred_url":"https://api.github.com/users/carlos3113/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/carlos3113/subscriptions","organizations_url":"https://api.github.com/users/carlos3113/orgs","repos_url":"https://api.github.com/users/carlos3113/repos","events_url":"https://api.github.com/users/carlos3113/events{/privacy}","received_events_url":"https://api.github.com/users/carlos3113/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":0,"public_gists":0,"followers":0,"following":0,"created_at":"2022-04-22T15:55:03Z","updated_at":"2022-04-22T15:55:03Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":0,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as carlos3113 
+[info] 

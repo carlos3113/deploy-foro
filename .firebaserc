@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "foromiller-1da76"
+  },
+  "targets": {
+    "foromiller-1da76": {
+      "hosting": {
+        "ctae-forum": [
+          "foromiller-1da76"
+        ]
+      }
+    }
+  }
+}
